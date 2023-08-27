@@ -1,0 +1,130 @@
+.col-centered {
+  margin-left: 150px;
+}
+
+.col-centered1 {
+  margin-left: 100px;
+}
+
+.col-centered2 {
+  margin-top: -55px;
+  margin-left: 50%;
+  margin-bottom: -30px;
+  transform: translateX(-50%);
+}
+
+.logo {
+  background-image: url(../Styling/l2.png);
+  background-color: #212529;
+  background-repeat: no-repeat;
+  background-size: 9%;
+  background-position-y: center;
+}
+
+.darkmode {
+  background-color: #212529;
+}
+
+.ab {
+  margin-top: -20px;
+}
+
+.mar {
+  margin-left: -10px;
+}
+
+.nav-links:hover {
+  border-radius: 5px;
+  background-color: rgb(
+    18,
+    102,
+    241
+  ); /*will change background-color of element on hover */
+}
+
+.nav-links-inactive:hover {
+  border-radius: 5px;
+  background-color: rgb(
+    249,
+    49,
+    84
+  ); /*will change background-color of element on hover */
+}
+
+.shallow-container {
+  display: none;
+}
+
+.shallow-bulge {
+  background: white;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 400ms;
+
+  box-shadow: 7px 7px 10px #bbcfda, -4px -4px 13px #fff,
+    inset 4px 4px 8px rgba(209, 217, 230, 0.2),
+    inset -8px -8px 8px rgba(255, 255, 255, 0.2);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.shallow-bulge-dark {
+  background: #282c36;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 400ms;
+
+  box-shadow: 7px 7px 10px #131313, -5px -1px 5px rgba(20, 20, 20, 0.4),
+    inset 4px 4px 8px rgba(209, 217, 230, 0),
+    inset -8px -8px 8px rgba(255, 255, 255, 0);
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.shallow-bulge span {
+  font-size: 15px;
+  transition: all 400ms;
+  text-decoration: none;
+}
+
+.shallow-bulge:hover span {
+  transform: scale(0.96);
+  text-decoration: none;
+}
+
+.shallow-bulge:hover {
+  box-shadow: 4px 2px 18px #bbcfda, -4px -4px 13px #fff,
+    inset 6px 6px 16px rgba(209, 217, 230, 0.8),
+    inset -8px -8px 8px rgba(255, 255, 255, 0.2);
+
+  transform: translateY(2px);
+}
+
+.shallow-bulge-dark span {
+  font-size: 15px;
+  transition: all 400ms;
+  text-decoration: none;
+}
+
+.shallow-bulge-dark:hover span {
+  transform: scale(0.96);
+  text-decoration: none;
+}
+
+.shallow-bulge-dark:hover {
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.4), -3px -3px 6px rgba(0, 0, 0, 0.04),
+    inset -1px -1px 2px rgba(255, 255, 255, 0.05),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.01);
+  transform: translateY(2px);
+}

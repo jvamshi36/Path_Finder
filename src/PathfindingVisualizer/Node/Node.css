@@ -1,0 +1,314 @@
+.node {
+  width: 1.62vw; /*100% width for grid, 61 columns, thus 100/61 = 1.62*/
+  height: 3.5vh; /*70%  height for grid,21 rows, thus 100/21 = around 3.5*/
+  outline: 1px solid rgb(175, 216, 248);
+  display: inline-block;
+}
+
+.node-finish {
+  background-image: url(../Styling/end.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.node-start {
+  background-image: url(../Styling/start.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.node-wall {
+  background-color: rgb(12, 53, 71);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: transform 0.0005s ease-out;
+}
+
+.node-wall-dark {
+  background-color: rgb(37, 98, 145);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: transform 0.0005s ease-out;
+}
+.node-station {
+  background-image: url(../Styling/station.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.node-weight-2 {
+  background-image: url(../Styling/two.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+
+.node-weight-3 {
+  background-image: url(../Styling/three.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+.node-weight-4 {
+  background-image: url(../Styling/four.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+
+.node-weight-5 {
+  background-image: url(../Styling/five.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+.node-weight-6 {
+  background-image: url(../Styling/six.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+
+.node-weight-s-2 {
+  background-image: url(../Styling/2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+
+.node-weight-s-3 {
+  background-image: url(../Styling/3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+.node-weight-s-4 {
+  background-image: url(../Styling/4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+
+.node-weight-s-5 {
+  background-image: url(../Styling/5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+.node-weight-s-6 {
+  background-image: url(../Styling/6.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+.node-visited {
+  animation-name: visitedAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.node-visited-station {
+  animation-name: visitedAnimationForStationToFinish;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.node-down {
+  background-image: url(../Styling/down-arrow.png);
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.node-up {
+  background-image: url(../Styling/up-arrow.png);
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.node-left {
+  background-image: url(../Styling/left-arrow.png);
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.node-right {
+  background-image: url(../Styling/right-arrow.png);
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.node-upright {
+  background-image: url(../Styling/upright-arrow.png);
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.node-downright {
+  background-image: url(../Styling/downright-arrow.png);
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.node-upleft {
+  background-image: url(../Styling/upleft-arrow.png);
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.node-downleft {
+  background-image: url(../Styling/downleft-arrow.png);
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.wall-animate {
+  animation-name: wallAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.wall-animate-dark {
+  animation-name: wallAnimationDark;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+@keyframes visitedAnimation {
+  0% {
+    transform: scale(0.3);
+    background-color: rgba(32, 2, 44, 0.75);
+    border-radius: 100%;
+  }
+
+  50% {
+    background-color: rgba(77, 17, 217, 0.75);
+  }
+
+  75% {
+    transform: scale(1.2);
+    background-color: rgba(112, 0, 217, 0.75);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgba(0, 218, 207, 0.75);
+  }
+}
+
+@keyframes visitedAnimationForStationToFinish {
+  0% {
+    transform: scale(0.3);
+    background-color: rgba(32, 2, 44, 0.75);
+    border-radius: 100%;
+  }
+
+  50% {
+    background-color: rgba(17, 217, 50, 0.75);
+  }
+
+  75% {
+    transform: scale(1.2);
+    background-color: rgba(0, 217, 181, 0.75);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgba(0, 218, 207, 0.75);
+  }
+}
+
+.node-shortest-path {
+  animation-name: shortestPath;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes wallAnimation {
+  0% {
+    transform: scale(0.6);
+    background-color: rgb(4, 88, 124);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: rgb(1, 42, 59);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgb(12, 53, 71);
+  }
+}
+
+@keyframes wallAnimationDark {
+  0% {
+    transform: scale(0.6);
+    background-color: rgb(112, 156, 175);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: rgb(56, 109, 150);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgb(37, 98, 145);
+  }
+}
+
+@keyframes shortestPath {
+  0% {
+    transform: scale(0.6);
+    background-color: rgb(106, 188, 255);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: rgb(195, 106, 255);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgba(112, 0, 217, 0.75);
+  }
+}

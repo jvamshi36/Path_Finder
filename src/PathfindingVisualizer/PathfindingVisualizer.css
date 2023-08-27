@@ -1,0 +1,17 @@
+.grid {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  margin: -10px 0 0;
+  margin-left: 10px;
+}
+
+.mar {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.backg {
+  background-color: #17191f;
+}
